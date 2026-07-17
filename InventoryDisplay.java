@@ -2,9 +2,8 @@
  * Task 1: Inventory Display
  * Prints grocery inventory from parallel arrays, skipping empty slots.
  *
- * Group members: [Your Name], [Partner Name]
+ * Group members: Noah Pham, Kelly Jenkins
  *
- * @author [Your Name], [Partner Name]
  * @version 1.0
  */
 public class InventoryDisplay {
