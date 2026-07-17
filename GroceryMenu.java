@@ -5,9 +5,8 @@ import java.util.Scanner;
  * Runs the grocery management system menu and calls inventory display and
  * restock methods based on user input.
  *
- * Group members: [Your Name], [Partner Name]
+ * Group members: Noah Pham, Kelly Jenkins
  *
- * @author [Your Name], [Partner Name]
  * @version 1.0
  */
 public class GroceryMenu {
