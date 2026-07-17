@@ -2,9 +2,8 @@
  * Task 2: Restock and Search
  * Finds an item by name in parallel arrays and increases its stock.
  *
- * Group members: [Your Name], [Partner Name]
+ * Group members: Noah Pham, Kelly Jenkins
  *
- * @author [Your Name], [Partner Name]
  * @version 1.0
  */
 public class RestockItem {
