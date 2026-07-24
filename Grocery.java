@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * 
  * Grocery is a class that build a grocery management system using parallel
@@ -11,6 +13,53 @@
  */
 public class Grocery{
 
+/**
+ * Runs the grocery management system menu. Sets up the parallel arrays and
+ * uses a Scanner with a while loop to let the user view the inventory,
+ * restock an item, or exit the program.
+ *
+ * @param args command line arguments (not used)
+ */
+    public static void main(String[] args) {
+	    Scanner keyboard = new Scanner(System.in);
+	    int userInput;
+	    String userItem;
+	    int userAmount;
+	    
+	    String[] itemNames = new String[10];
+	    double[] itemPrices = new double[10];
+	    int[] itemStock = new int[10];
+	    
+	    while(true){
+	        System.out.println("Enter in:\n" + 
+	                           "1 - View Menu\n" +
+                               "2 - Restock\n" +	
+                               "3 - Exit\n");
+                               
+            userInput = keyboard.nextInt();
+            
+            if(userInput == 1){
+                printInventory(itemNames, itemPrices, itemStock);
+            }
+            else if (userInput == 2){
+                System.out.println("Enter in Item");
+                userItem = keyboard.next();
+                System.out.println("Enter in amount");
+                userAmount = keyboard.nextInt();
+                
+                restockItem(itemNames, itemStock, userItem, userAmount);
+            }
+            else if (userInput == 3){
+                System.out.println("Exiting");
+                break;
+            }
+            else{
+                System.out.print("Invalid! Enter in 1, 2, or 3!");
+            }
+	    }
+		 keyboard.close();
+	}
+    
 /**
  * Prints the item name, price, and stock quantity for each item
  * Skips any element in array that contains the null value
