@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /**
- * Grocery is a class that build a grocery management system using parallel
+ * GroceryManagement is a class that build a grocery management system using parallel
  * arrays, where the same index corresponds to the same item. There are three
  * main functions in the class, displaying the inventory, restocking items, 
  * and providing a user menu.
